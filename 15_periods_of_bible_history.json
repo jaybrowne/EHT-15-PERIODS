@@ -1,0 +1,465 @@
+{
+  "title": "15 Periods of Bible History",
+  "sourceFile": "PeriodsOfBibleHistory.pptx",
+  "sourceSlideCount": 17,
+  "periodCount": 15,
+  "extractionNotes": [
+    "Text is preserved as written in the source slides, including spelling, punctuation, capitalization, and historical claims.",
+    "description and sourceMemoryText are source text, not revised historical commentary.",
+    "memoryScene and historicalExplanation split the original narrative at the phrase “This represents” when present.",
+    "Images are not embedded in this JSON.",
+    "bibleBooks is supplemental content added after extraction; it is NOT from the source PPTX. It is a conventional mapping of Bible books to periods, and dating of some books (e.g. Job, Joel, Obadiah, Psalms) is debated. Period 13 has no books."
+  ],
+  "sourceAttribution": "This information was created from a PTP session that Stephen Haschke attended in 2015.  It was originally presented by Monte Ginnings.",
+  "periods": [
+    {
+      "number": 1,
+      "rhyme": "Run",
+      "period": "Before The Flood",
+      "sourceSlide": 2,
+      "sourceHeading": "1 - Run",
+      "sourceShortLabel": "1 - Run",
+      "description": "Picture people and animals running away as fast as they can.  What are they running from? It’s a massive deluge, a huge flood!\nThis represents the time period BEFORE THE FLOOD.\nOne\u000bRun\u000bBefore The Flood",
+      "memoryScene": "Picture people and animals running away as fast as they can.  What are they running from? It’s a massive deluge, a huge flood!",
+      "historicalExplanation": "This represents the time period BEFORE THE FLOOD.\nOne\u000bRun\u000bBefore The Flood",
+      "sourceMemoryText": "Picture people and animals running away as fast as they can.  What are they running from? It’s a massive deluge, a huge flood!\nThis represents the time period BEFORE THE FLOOD.\nOne\u000bRun\u000bBefore The Flood",
+      "bibleBooks": [
+        {
+          "book": "Genesis",
+          "scope": "chapters 1–5"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "rhyme": "Zoo",
+      "period": "After The Flood",
+      "sourceSlide": 3,
+      "sourceHeading": "2 Rhymes with ZOO",
+      "sourceShortLabel": "2 - Zoo",
+      "description": "Picture a monkey in the zoo, but you notice something strange about this monkey. He is waving at something. He is waving at water that is going away.\nThis represents the time AFTER THE FLOOD.",
+      "memoryScene": "Picture a monkey in the zoo, but you notice something strange about this monkey. He is waving at something. He is waving at water that is going away.",
+      "historicalExplanation": "This represents the time AFTER THE FLOOD.",
+      "sourceMemoryText": "Picture a monkey in the zoo, but you notice something strange about this monkey. He is waving at something. He is waving at water that is going away.\nThis represents the time AFTER THE FLOOD.\n2\u000bZoo\u000bAfter The Flood",
+      "bibleBooks": [
+        {
+          "book": "Genesis",
+          "scope": "chapters 8–11"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "rhyme": "Tree",
+      "period": "Patriarchy",
+      "sourceSlide": 4,
+      "sourceHeading": "3 Rhymes with Tree",
+      "sourceShortLabel": "3 - Tree",
+      "description": "Picture a tree, but not just any tree, a giant, strong tree. On the branches there are old men standing. You look and you see Abraham, Isaac, Jacob and Joseph, the PATRIARCHS.\nThis represents the time of the patriarchy.",
+      "memoryScene": "Picture a tree, but not just any tree, a giant, strong tree. On the branches there are old men standing. You look and you see Abraham, Isaac, Jacob and Joseph, the PATRIARCHS.",
+      "historicalExplanation": "This represents the time of the patriarchy.",
+      "sourceMemoryText": "Picture a tree, but not just any tree, a giant, strong tree. On the branches there are old men standing. You look and you see Abraham, Isaac, Jacob and Joseph, the PATRIARCHS.\nThis represents the time of the patriarchy.\n3\u000bTree\u000bPatriarchy",
+      "bibleBooks": [
+        {
+          "book": "Genesis",
+          "scope": "chapters 12–50"
+        },
+        {
+          "book": "Job"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "rhyme": "Door",
+      "period": "Bondage",
+      "sourceSlide": 5,
+      "sourceHeading": "4 Rhymes with Door",
+      "sourceShortLabel": "4 - Door",
+      "description": "Picture a door, but not just any kind of door, this is a special door. It has bars and is locked; it is a jail door.\nThis represents the time period when the children of Israel were in BONDAGE in Egypt.",
+      "memoryScene": "Picture a door, but not just any kind of door, this is a special door. It has bars and is locked; it is a jail door.",
+      "historicalExplanation": "This represents the time period when the children of Israel were in BONDAGE in Egypt.",
+      "sourceMemoryText": "Picture a door, but not just any kind of door, this is a special door. It has bars and is locked; it is a jail door.\nThis represents the time period when the children of Israel were in BONDAGE in Egypt.\n4\u000bDoor\u000bBondage",
+      "bibleBooks": [
+        {
+          "book": "Exodus",
+          "scope": "chapters 1–12"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "rhyme": "Dive",
+      "period": "Wandering",
+      "sourceSlide": 6,
+      "sourceHeading": "5 Rhymes with Dive",
+      "sourceShortLabel": "5 - Dive",
+      "description": "Picture a man standing on a diving board about to dive in.  Does it have water, or is it empty? He is WONDERING (WANDERING).\nThis represents the period of the 40 years of WANDERING after the 10 spies said that the land of Canaan could not be conquered.",
+      "memoryScene": "Picture a man standing on a diving board about to dive in.  Does it have water, or is it empty? He is WONDERING (WANDERING).",
+      "historicalExplanation": "This represents the period of the 40 years of WANDERING after the 10 spies said that the land of Canaan could not be conquered.",
+      "sourceMemoryText": "Picture a man standing on a diving board about to dive in.  Does it have water, or is it empty? He is WONDERING (WANDERING).\nThis represents the period of the 40 years of WANDERING after the 10 spies said that the land of Canaan could not be conquered.\n5\u000bDive\u000bWandering",
+      "bibleBooks": [
+        {
+          "book": "Exodus",
+          "scope": "chapters 13–40"
+        },
+        {
+          "book": "Leviticus"
+        },
+        {
+          "book": "Numbers"
+        },
+        {
+          "book": "Deuteronomy"
+        },
+        {
+          "book": "Psalms",
+          "scope": "Psalm 90"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "rhyme": "Sticks",
+      "period": "Conquest",
+      "sourceSlide": 7,
+      "sourceHeading": "6 Rhymes with sticks",
+      "sourceShortLabel": "6 - Sticks",
+      "description": "Two boys fighting, playing war with sticks. \nThis represents the fighting the children of Israel would have to do to take the land of Canaan.  This is the period of CONQUEST.",
+      "memoryScene": "Two boys fighting, playing war with sticks.",
+      "historicalExplanation": "This represents the fighting the children of Israel would have to do to take the land of Canaan.  This is the period of CONQUEST.",
+      "sourceMemoryText": "Two boys fighting, playing war with sticks. \nThis represents the fighting the children of Israel would have to do to take the land of Canaan.  This is the period of CONQUEST.\n\n6\u000bSticks\u000bConquest",
+      "bibleBooks": [
+        {
+          "book": "Joshua"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "rhyme": "Heaven",
+      "period": "Judges",
+      "sourceSlide": 8,
+      "sourceHeading": "7 Rhymes with Heaven",
+      "sourceShortLabel": "7 - Heaven",
+      "description": "To enter heaven we all have to go before a JUDGE. Jesus Christ the righteous judge.\nThis represents the period of the JUDGES.",
+      "memoryScene": "To enter heaven we all have to go before a JUDGE. Jesus Christ the righteous judge.",
+      "historicalExplanation": "This represents the period of the JUDGES.",
+      "sourceMemoryText": "To enter heaven we all have to go before a JUDGE. Jesus Christ the righteous judge.\nThis represents the period of the JUDGES.\n7\u000bHeaven\u000bJudges",
+      "bibleBooks": [
+        {
+          "book": "Judges"
+        },
+        {
+          "book": "Ruth"
+        },
+        {
+          "book": "1 Samuel",
+          "scope": "chapters 1–7"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "rhyme": "Gate",
+      "period": "United Kingdom",
+      "sourceSlide": 9,
+      "sourceHeading": "8 Rhymes with Gate",
+      "sourceShortLabel": "8 - Gate",
+      "description": "Picture a gate, not just any gate but a very ornate gate. When the two sides of the gates come together they say UNITED KINGDOM.\nThis represents the time when all of Israel was UNITED under Saul, David, and Solomon in the UNITED KINGDOM.",
+      "memoryScene": "Picture a gate, not just any gate but a very ornate gate. When the two sides of the gates come together they say UNITED KINGDOM.",
+      "historicalExplanation": "This represents the time when all of Israel was UNITED under Saul, David, and Solomon in the UNITED KINGDOM.",
+      "sourceMemoryText": "Picture a gate, not just any gate but a very ornate gate. When the two sides of the gates come together they say UNITED KINGDOM.\nThis represents the time when all of Israel was UNITED under Saul, David, and Solomon in the UNITED KINGDOM.\n8\u000bGate\u000bUnited Kingdom",
+      "bibleBooks": [
+        {
+          "book": "1 Samuel",
+          "scope": "chapters 8–31"
+        },
+        {
+          "book": "2 Samuel"
+        },
+        {
+          "book": "1 Kings",
+          "scope": "chapters 1–11"
+        },
+        {
+          "book": "1 Chronicles"
+        },
+        {
+          "book": "2 Chronicles",
+          "scope": "chapters 1–9"
+        },
+        {
+          "book": "Psalms"
+        },
+        {
+          "book": "Proverbs"
+        },
+        {
+          "book": "Ecclesiastes"
+        },
+        {
+          "book": "Song of Solomon"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "rhyme": "Wine",
+      "period": "Divided Kingdom",
+      "sourceSlide": 10,
+      "sourceHeading": "9 Rhymes with Wine (Whine)",
+      "sourceShortLabel": "9 - Wine",
+      "description": "Two kings together with their wine. They begin to argue and fight which leads to a DIVIDED KINGDOM.\nThis represents the period of time in 975 BC when the United Kingdom was divided into Northern (Israel) and Southern (Judah) Kingdoms.",
+      "memoryScene": "Two kings together with their wine. They begin to argue and fight which leads to a DIVIDED KINGDOM.",
+      "historicalExplanation": "This represents the period of time in 975 BC when the United Kingdom was divided into Northern (Israel) and Southern (Judah) Kingdoms.",
+      "sourceMemoryText": "Two kings together with their wine. They begin to argue and fight which leads to a DIVIDED KINGDOM.\nThis represents the period of time in 975 BC when the United Kingdom was divided into Northern (Israel) and Southern (Judah) Kingdoms.\n9\u000bWine\u000bDivided Kingdom",
+      "bibleBooks": [
+        {
+          "book": "1 Kings",
+          "scope": "chapters 12–22"
+        },
+        {
+          "book": "2 Kings",
+          "scope": "chapters 1–17"
+        },
+        {
+          "book": "2 Chronicles",
+          "scope": "chapters 10–28"
+        },
+        {
+          "book": "Hosea"
+        },
+        {
+          "book": "Joel"
+        },
+        {
+          "book": "Amos"
+        },
+        {
+          "book": "Jonah"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "rhyme": "Hen",
+      "period": "Judah Alone",
+      "sourceSlide": 11,
+      "sourceHeading": "10 Rhymes with HEN",
+      "sourceShortLabel": "10 – Hen",
+      "description": "Picture a farmer that had a lot of chickens but only one hen is left, Judah, and it's time for supper.\nJudah! Where are you?\nThis represents the time period when Israel was taken into Assyrian captivity and the nation of Judah was alone.",
+      "memoryScene": "Picture a farmer that had a lot of chickens but only one hen is left, Judah, and it's time for supper.\nJudah! Where are you?",
+      "historicalExplanation": "This represents the time period when Israel was taken into Assyrian captivity and the nation of Judah was alone.",
+      "sourceMemoryText": "Picture a farmer that had a lot of chickens but only one hen is left, Judah, and it's time for supper.\nJudah! Where are you?\nThis represents the time period when Israel was taken into Assyrian captivity and the nation of Judah was alone.\n10\u000bHen\u000bJudah Alone",
+      "bibleBooks": [
+        {
+          "book": "2 Kings",
+          "scope": "chapters 18–25"
+        },
+        {
+          "book": "2 Chronicles",
+          "scope": "chapters 29–36"
+        },
+        {
+          "book": "Isaiah"
+        },
+        {
+          "book": "Jeremiah"
+        },
+        {
+          "book": "Micah"
+        },
+        {
+          "book": "Nahum"
+        },
+        {
+          "book": "Habakkuk"
+        },
+        {
+          "book": "Zephaniah"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "rhyme": "Leaven",
+      "period": "Captivity",
+      "sourceSlide": 12,
+      "sourceHeading": "11 Leaven",
+      "sourceShortLabel": "11 – Leaven",
+      "description": "You are baking a big batch of bread and you have leaven (yeast) all over the place. To clean up you have to bring it all into CAPTIVITY.\nThis represents the time period when Israel went into Babylonian CAPTIVITY 606, 597, 586 BC.",
+      "memoryScene": "You are baking a big batch of bread and you have leaven (yeast) all over the place. To clean up you have to bring it all into CAPTIVITY.",
+      "historicalExplanation": "This represents the time period when Israel went into Babylonian CAPTIVITY 606, 597, 586 BC.",
+      "sourceMemoryText": "You are baking a big batch of bread and you have leaven (yeast) all over the place. To clean up you have to bring it all into CAPTIVITY.\nThis represents the time period when Israel went into Babylonian CAPTIVITY 606, 597, 586 BC.\n11\u000bLeaven\u000bCaptivity",
+      "bibleBooks": [
+        {
+          "book": "Lamentations"
+        },
+        {
+          "book": "Ezekiel"
+        },
+        {
+          "book": "Daniel"
+        },
+        {
+          "book": "Obadiah"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "rhyme": "Shelve",
+      "period": "Return",
+      "sourceSlide": 13,
+      "sourceHeading": "12 Rhymes with Shelve",
+      "sourceShortLabel": "12 – Shelve",
+      "description": "Picture a library with shelve after shelve of books. When you take a book from the library you have to return it. To shelve number 12.\nThis represents THE RETURN of the children of Israel from Babylonian captivity.",
+      "memoryScene": "Picture a library with shelve after shelve of books. When you take a book from the library you have to return it. To shelve number 12.",
+      "historicalExplanation": "This represents THE RETURN of the children of Israel from Babylonian captivity.",
+      "sourceMemoryText": "Picture a library with shelve after shelve of books. When you take a book from the library you have to return it. To shelve number 12.\nThis represents THE RETURN of the children of Israel from Babylonian captivity.\n12\u000bShelve\u000bReturn",
+      "bibleBooks": [
+        {
+          "book": "Ezra"
+        },
+        {
+          "book": "Nehemiah"
+        },
+        {
+          "book": "Esther"
+        },
+        {
+          "book": "Haggai"
+        },
+        {
+          "book": "Zechariah"
+        },
+        {
+          "book": "Malachi"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "rhyme": "Thirsty Teen",
+      "period": "Between the Testaments",
+      "sourceSlide": 14,
+      "sourceHeading": "13 The Thirsty Teen",
+      "sourceShortLabel": "13 – Thirsty Teen",
+      "description": "A young teen walking down a valley between two tall walls. Look closely and it’s the Old Testament book on one side and the New Testament on the other.\nThis represents the time between the Old and New Testaments. A time of approximately 400 years.",
+      "memoryScene": "A young teen walking down a valley between two tall walls. Look closely and it’s the Old Testament book on one side and the New Testament on the other.",
+      "historicalExplanation": "This represents the time between the Old and New Testaments. A time of approximately 400 years.",
+      "sourceMemoryText": "A young teen walking down a valley between two tall walls. Look closely and it’s the Old Testament book on one side and the New Testament on the other.\nThis represents the time between the Old and New Testaments. A time of approximately 400 years.\n\n13\u000bThirsty Teen\u000bBetween the Testaments",
+      "bibleBooks": []
+    },
+    {
+      "number": 14,
+      "rhyme": "Fort",
+      "period": "The Life Of Christ",
+      "sourceSlide": 15,
+      "sourceHeading": "14 Fort",
+      "sourceShortLabel": "14 – Fort",
+      "description": "Imagine a grand fort, protected on all sides. In the middle of this fort is the one that is being protected: it is Jesus the Christ.\nThis represents the period of the LIFE OF CHRIST. Matthew, Mark, Luke, and John.",
+      "memoryScene": "Imagine a grand fort, protected on all sides. In the middle of this fort is the one that is being protected: it is Jesus the Christ.",
+      "historicalExplanation": "This represents the period of the LIFE OF CHRIST. Matthew, Mark, Luke, and John.",
+      "sourceMemoryText": "Imagine a grand fort, protected on all sides. In the middle of this fort is the one that is being protected: it is Jesus the Christ.\nThis represents the period of the LIFE OF CHRIST. Matthew, Mark, Luke, and John.\n\n14\u000bFort\u000bThe Life Of Christ",
+      "bibleBooks": [
+        {
+          "book": "Matthew"
+        },
+        {
+          "book": "Mark"
+        },
+        {
+          "book": "Luke"
+        },
+        {
+          "book": "John"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "rhyme": "One Five",
+      "period": "Church Age",
+      "sourceSlide": 16,
+      "sourceHeading": "15 One-Five",
+      "sourceShortLabel": "15 – One Five",
+      "description": "One CHURCH, five acts of worship. Singing, praying, preaching, giving and the Lord’s Supper.\nThis represents the CHURCH age.",
+      "memoryScene": "One CHURCH, five acts of worship. Singing, praying, preaching, giving and the Lord’s Supper.",
+      "historicalExplanation": "This represents the CHURCH age.",
+      "sourceMemoryText": "One CHURCH, five acts of worship. Singing, praying, preaching, giving and the Lord’s Supper.\nThis represents the CHURCH age.\n15\u000bOne Five\u000bChurch Age",
+      "bibleBooks": [
+        {
+          "book": "Acts"
+        },
+        {
+          "book": "Romans"
+        },
+        {
+          "book": "1 Corinthians"
+        },
+        {
+          "book": "2 Corinthians"
+        },
+        {
+          "book": "Galatians"
+        },
+        {
+          "book": "Ephesians"
+        },
+        {
+          "book": "Philippians"
+        },
+        {
+          "book": "Colossians"
+        },
+        {
+          "book": "1 Thessalonians"
+        },
+        {
+          "book": "2 Thessalonians"
+        },
+        {
+          "book": "1 Timothy"
+        },
+        {
+          "book": "2 Timothy"
+        },
+        {
+          "book": "Titus"
+        },
+        {
+          "book": "Philemon"
+        },
+        {
+          "book": "Hebrews"
+        },
+        {
+          "book": "James"
+        },
+        {
+          "book": "1 Peter"
+        },
+        {
+          "book": "2 Peter"
+        },
+        {
+          "book": "1 John"
+        },
+        {
+          "book": "2 John"
+        },
+        {
+          "book": "3 John"
+        },
+        {
+          "book": "Jude"
+        },
+        {
+          "book": "Revelation"
+        }
+      ]
+    }
+  ]
+}

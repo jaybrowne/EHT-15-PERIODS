@@ -26,7 +26,7 @@
       "bibleBooks": [
         {
           "book": "Genesis",
-          "scope": "chapters 1–5"
+          "scope": "chapters 1–7"
         }
       ]
     },
@@ -44,7 +44,7 @@
       "bibleBooks": [
         {
           "book": "Genesis",
-          "scope": "chapters 8–11"
+          "scope": "chapters 7–11"
         }
       ]
     },

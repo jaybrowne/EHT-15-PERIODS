@@ -8,7 +8,8 @@
     "description and sourceMemoryText are source text, not revised historical commentary.",
     "memoryScene and historicalExplanation split the original narrative at the phrase “This represents” when present.",
     "Images are not embedded in this JSON.",
-    "bibleBooks is supplemental content added after extraction; it is NOT from the source PPTX. It is a conventional mapping of Bible books to periods, and dating of some books (e.g. Job, Joel, Obadiah, Psalms) is debated. Period 13 has no books."
+    "bibleBooks is supplemental content added after extraction; it is NOT from the source PPTX. It is a conventional mapping of Bible books to periods, and dating of some books (e.g. Job, Joel, Obadiah, Psalms) is debated. Period 13 has no books.",
+    "importantPeople is supplemental content added after extraction; it is NOT from the source PPTX. Entries marked biblical:false (period 13) are historical figures from outside the Bible. Placement of some figures (e.g. Job, Joel, Nimrod) is debated, and many people span more than one period."
   ],
   "sourceAttribution": "This information was created from a PTP session that Stephen Haschke attended in 2015.  It was originally presented by Monte Ginnings.",
   "periods": [
@@ -28,6 +29,40 @@
           "book": "Genesis",
           "scope": "chapters 1–7"
         }
+      ],
+      "importantPeople": [
+        {
+          "name": "Adam",
+          "role": "First man"
+        },
+        {
+          "name": "Eve",
+          "role": "First woman"
+        },
+        {
+          "name": "Cain",
+          "role": "Firstborn son of Adam and Eve; killed Abel"
+        },
+        {
+          "name": "Abel",
+          "role": "Son of Adam and Eve; killed by Cain"
+        },
+        {
+          "name": "Seth",
+          "role": "Son of Adam and Eve"
+        },
+        {
+          "name": "Enoch",
+          "role": "Walked with God and was taken"
+        },
+        {
+          "name": "Methuselah",
+          "role": "Longest-lived person in the Bible"
+        },
+        {
+          "name": "Noah",
+          "role": "Built the ark"
+        }
       ]
     },
     {
@@ -46,6 +81,28 @@
           "book": "Genesis",
           "scope": "chapters 7–11"
         }
+      ],
+      "importantPeople": [
+        {
+          "name": "Noah",
+          "role": "Survived the Flood; received God's covenant"
+        },
+        {
+          "name": "Shem",
+          "role": "Son of Noah"
+        },
+        {
+          "name": "Ham",
+          "role": "Son of Noah"
+        },
+        {
+          "name": "Japheth",
+          "role": "Son of Noah"
+        },
+        {
+          "name": "Nimrod",
+          "role": "Mighty hunter; builder of early cities"
+        }
       ]
     },
     {
@@ -55,9 +112,9 @@
       "sourceSlide": 4,
       "sourceHeading": "3 Rhymes with Tree",
       "sourceShortLabel": "3 - Tree",
-      "description": "Picture a tree, but not just any tree, a giant, strong tree. On the branches there are old men standing. In the bible this would include men such as Abraham, Isaac, Jacob and Joseph, the PATRIARCHS.\nThis represents the time of the patriarchy.",
-      "memoryScene": "Picture a tree, but not just any tree, a giant, strong tree. On the branches there are old men standing. In the bible this would include men such as Abraham, Isaac, Jacob and Joseph, the PATRIARCHS.\nThis represents the time of the patriarchy.",
-      "historicalExplanation": "This represents the time of the patriarchy.",
+      "description": "Picture a tree, but not just any tree, a giant, strong tree. On the branches there are old men standing, each one named.",
+      "memoryScene": "Picture a tree, but not just any tree, a giant, strong tree. On the branches there are old men standing, each one named.",
+      "historicalExplanation": "This represents the time of the patriarchy. This would be the times of Abraham, Isaac, and Jacob.",
       "sourceMemoryText": "Picture a tree, but not just any tree, a giant, strong tree. On the branches there are old men standing. You look and you see Abraham, Isaac, Jacob and Joseph, the PATRIARCHS.\nThis represents the time of the patriarchy.\n3\u000bTree\u000bPatriarchy",
       "bibleBooks": [
         {
@@ -66,6 +123,56 @@
         },
         {
           "book": "Job"
+        }
+      ],
+      "importantPeople": [
+        {
+          "name": "Abraham",
+          "role": "Father of the faithful; received God's covenant"
+        },
+        {
+          "name": "Sarah",
+          "role": "Wife of Abraham"
+        },
+        {
+          "name": "Isaac",
+          "role": "Son of Abraham"
+        },
+        {
+          "name": "Rebekah",
+          "role": "Wife of Isaac"
+        },
+        {
+          "name": "Jacob",
+          "role": "Son of Isaac, renamed Israel"
+        },
+        {
+          "name": "Leah",
+          "role": "Wife of Jacob"
+        },
+        {
+          "name": "Rachel",
+          "role": "Wife of Jacob"
+        },
+        {
+          "name": "Joseph",
+          "role": "Son of Jacob; ruler in Egypt"
+        },
+        {
+          "name": "Judah",
+          "role": "Son of Jacob; ancestor of David and Jesus"
+        },
+        {
+          "name": "Lot",
+          "role": "Nephew of Abraham"
+        },
+        {
+          "name": "Melchizedek",
+          "role": "King of Salem and priest of God Most High"
+        },
+        {
+          "name": "Job",
+          "role": "Man of Uz known for his endurance"
         }
       ]
     },
@@ -84,6 +191,32 @@
         {
           "book": "Exodus",
           "scope": "chapters 1–12"
+        }
+      ],
+      "importantPeople": [
+        {
+          "name": "Moses",
+          "role": "Born in Egypt; later led Israel out"
+        },
+        {
+          "name": "Aaron",
+          "role": "Brother of Moses; first high priest"
+        },
+        {
+          "name": "Miriam",
+          "role": "Sister of Moses"
+        },
+        {
+          "name": "Jochebed",
+          "role": "Mother of Moses"
+        },
+        {
+          "name": "Pharaoh",
+          "role": "Egyptian king who enslaved Israel"
+        },
+        {
+          "name": "Pharaoh's daughter",
+          "role": "Rescued and raised Moses"
         }
       ]
     },
@@ -116,6 +249,40 @@
           "book": "Psalms",
           "scope": "Psalm 90"
         }
+      ],
+      "importantPeople": [
+        {
+          "name": "Moses",
+          "role": "Leader and lawgiver"
+        },
+        {
+          "name": "Aaron",
+          "role": "High priest"
+        },
+        {
+          "name": "Miriam",
+          "role": "Prophetess; sister of Moses"
+        },
+        {
+          "name": "Joshua",
+          "role": "One of the spies; Moses' successor"
+        },
+        {
+          "name": "Caleb",
+          "role": "One of the spies who trusted God"
+        },
+        {
+          "name": "Eleazar",
+          "role": "Son of Aaron; priest"
+        },
+        {
+          "name": "Korah",
+          "role": "Led a rebellion against Moses"
+        },
+        {
+          "name": "Balaam",
+          "role": "Prophet hired to curse Israel"
+        }
       ]
     },
     {
@@ -133,6 +300,28 @@
         {
           "book": "Joshua"
         }
+      ],
+      "importantPeople": [
+        {
+          "name": "Joshua",
+          "role": "Led Israel in the conquest of Canaan"
+        },
+        {
+          "name": "Caleb",
+          "role": "Received Hebron as his inheritance"
+        },
+        {
+          "name": "Rahab",
+          "role": "Hid the spies at Jericho"
+        },
+        {
+          "name": "Eleazar",
+          "role": "High priest"
+        },
+        {
+          "name": "Achan",
+          "role": "Took forbidden spoil at Jericho"
+        }
       ]
     },
     {
@@ -144,7 +333,7 @@
       "sourceShortLabel": "7 - Heaven",
       "description": "To enter heaven we all have to go before a JUDGE. Jesus Christ the righteous judge.\nThis represents the period of the JUDGES.",
       "memoryScene": "To enter heaven we all have to go before a JUDGE. Jesus Christ the righteous judge.",
-      "historicalExplanation": "This represents the period of the JUDGES.",
+      "historicalExplanation": "This represents the period of the JUDGES. ",
       "sourceMemoryText": "To enter heaven we all have to go before a JUDGE. Jesus Christ the righteous judge.\nThis represents the period of the JUDGES.\n7\u000bHeaven\u000bJudges",
       "bibleBooks": [
         {
@@ -156,6 +345,60 @@
         {
           "book": "1 Samuel",
           "scope": "chapters 1–7"
+        }
+      ],
+      "importantPeople": [
+        {
+          "name": "Othniel",
+          "role": "First judge"
+        },
+        {
+          "name": "Ehud",
+          "role": "Judge who delivered Israel from Moab"
+        },
+        {
+          "name": "Deborah",
+          "role": "Judge and prophetess"
+        },
+        {
+          "name": "Barak",
+          "role": "Led Israel's army with Deborah"
+        },
+        {
+          "name": "Gideon",
+          "role": "Judge who defeated Midian"
+        },
+        {
+          "name": "Jephthah",
+          "role": "Judge"
+        },
+        {
+          "name": "Samson",
+          "role": "Judge known for his strength"
+        },
+        {
+          "name": "Ruth",
+          "role": "Moabite ancestor of David"
+        },
+        {
+          "name": "Naomi",
+          "role": "Mother-in-law of Ruth"
+        },
+        {
+          "name": "Boaz",
+          "role": "Husband of Ruth"
+        },
+        {
+          "name": "Eli",
+          "role": "Priest and judge"
+        },
+        {
+          "name": "Hannah",
+          "role": "Mother of Samuel"
+        },
+        {
+          "name": "Samuel",
+          "role": "Last judge; prophet"
         }
       ]
     },
@@ -201,6 +444,52 @@
         {
           "book": "Song of Solomon"
         }
+      ],
+      "importantPeople": [
+        {
+          "name": "Samuel",
+          "role": "Prophet who anointed Saul and David"
+        },
+        {
+          "name": "Saul",
+          "role": "First king of Israel"
+        },
+        {
+          "name": "Jonathan",
+          "role": "Son of Saul; friend of David"
+        },
+        {
+          "name": "David",
+          "role": "Second king; man after God's own heart"
+        },
+        {
+          "name": "Bathsheba",
+          "role": "Wife of David; mother of Solomon"
+        },
+        {
+          "name": "Nathan",
+          "role": "Prophet in David's court"
+        },
+        {
+          "name": "Absalom",
+          "role": "Son of David who rebelled"
+        },
+        {
+          "name": "Joab",
+          "role": "Commander of David's army"
+        },
+        {
+          "name": "Solomon",
+          "role": "Third king; built the temple"
+        },
+        {
+          "name": "Hiram",
+          "role": "King of Tyre; supplied materials for the temple"
+        },
+        {
+          "name": "Queen of Sheba",
+          "role": "Visited Solomon"
+        }
       ]
     },
     {
@@ -238,6 +527,60 @@
         },
         {
           "book": "Jonah"
+        }
+      ],
+      "importantPeople": [
+        {
+          "name": "Rehoboam",
+          "role": "First king of Judah"
+        },
+        {
+          "name": "Jeroboam",
+          "role": "First king of the northern kingdom"
+        },
+        {
+          "name": "Ahab",
+          "role": "King of Israel"
+        },
+        {
+          "name": "Jezebel",
+          "role": "Queen of Israel; wife of Ahab"
+        },
+        {
+          "name": "Elijah",
+          "role": "Prophet"
+        },
+        {
+          "name": "Elisha",
+          "role": "Prophet; successor of Elijah"
+        },
+        {
+          "name": "Jehu",
+          "role": "King of Israel"
+        },
+        {
+          "name": "Jehoshaphat",
+          "role": "King of Judah"
+        },
+        {
+          "name": "Jonah",
+          "role": "Prophet sent to Nineveh"
+        },
+        {
+          "name": "Amos",
+          "role": "Prophet"
+        },
+        {
+          "name": "Hosea",
+          "role": "Prophet"
+        },
+        {
+          "name": "Joel",
+          "role": "Prophet"
+        },
+        {
+          "name": "Uzziah",
+          "role": "King of Judah"
         }
       ]
     },
@@ -279,6 +622,56 @@
         {
           "book": "Zephaniah"
         }
+      ],
+      "importantPeople": [
+        {
+          "name": "Hezekiah",
+          "role": "Reforming king of Judah"
+        },
+        {
+          "name": "Isaiah",
+          "role": "Prophet"
+        },
+        {
+          "name": "Micah",
+          "role": "Prophet"
+        },
+        {
+          "name": "Manasseh",
+          "role": "King of Judah"
+        },
+        {
+          "name": "Josiah",
+          "role": "Reforming king of Judah"
+        },
+        {
+          "name": "Jeremiah",
+          "role": "Prophet"
+        },
+        {
+          "name": "Hoshea",
+          "role": "Last king of Israel"
+        },
+        {
+          "name": "Shalmaneser V",
+          "role": "Assyrian king; besieged Samaria"
+        },
+        {
+          "name": "Sennacherib",
+          "role": "Assyrian king; invaded Judah"
+        },
+        {
+          "name": "Nahum",
+          "role": "Prophet"
+        },
+        {
+          "name": "Habakkuk",
+          "role": "Prophet"
+        },
+        {
+          "name": "Zephaniah",
+          "role": "Prophet"
+        }
       ]
     },
     {
@@ -304,6 +697,52 @@
         },
         {
           "book": "Obadiah"
+        }
+      ],
+      "importantPeople": [
+        {
+          "name": "Nebuchadnezzar",
+          "role": "King of Babylon"
+        },
+        {
+          "name": "Daniel",
+          "role": "Prophet and official in Babylon"
+        },
+        {
+          "name": "Shadrach",
+          "role": "Daniel's friend; the fiery furnace"
+        },
+        {
+          "name": "Meshach",
+          "role": "Daniel's friend; the fiery furnace"
+        },
+        {
+          "name": "Abednego",
+          "role": "Daniel's friend; the fiery furnace"
+        },
+        {
+          "name": "Ezekiel",
+          "role": "Prophet among the exiles"
+        },
+        {
+          "name": "Jeremiah",
+          "role": "Prophet in Jerusalem"
+        },
+        {
+          "name": "Jehoiachin",
+          "role": "King of Judah taken to Babylon"
+        },
+        {
+          "name": "Zedekiah",
+          "role": "Last king of Judah"
+        },
+        {
+          "name": "Belshazzar",
+          "role": "King of Babylon"
+        },
+        {
+          "name": "Darius the Mede",
+          "role": "Ruler after the fall of Babylon"
         }
       ]
     },
@@ -337,6 +776,56 @@
         {
           "book": "Malachi"
         }
+      ],
+      "importantPeople": [
+        {
+          "name": "Cyrus",
+          "role": "Persian king who allowed the Jews to return"
+        },
+        {
+          "name": "Zerubbabel",
+          "role": "Governor who led the first return"
+        },
+        {
+          "name": "Joshua the high priest",
+          "role": "Served with Zerubbabel"
+        },
+        {
+          "name": "Haggai",
+          "role": "Prophet"
+        },
+        {
+          "name": "Zechariah",
+          "role": "Prophet"
+        },
+        {
+          "name": "Ezra",
+          "role": "Priest and scribe"
+        },
+        {
+          "name": "Nehemiah",
+          "role": "Governor who rebuilt Jerusalem's wall"
+        },
+        {
+          "name": "Esther",
+          "role": "Queen of Persia"
+        },
+        {
+          "name": "Mordecai",
+          "role": "Esther's cousin"
+        },
+        {
+          "name": "Ahasuerus",
+          "role": "Persian king; husband of Esther"
+        },
+        {
+          "name": "Artaxerxes",
+          "role": "Persian king; sent Ezra and Nehemiah"
+        },
+        {
+          "name": "Malachi",
+          "role": "Last Old Testament prophet"
+        }
       ]
     },
     {
@@ -350,7 +839,24 @@
       "memoryScene": "A young teen walking down a valley between two tall walls. Look closely and it’s the Old Testament book on one side and the New Testament on the other.",
       "historicalExplanation": "This represents the time between the Old and New Testaments. A time of approximately 400 years.",
       "sourceMemoryText": "A young teen walking down a valley between two tall walls. Look closely and it’s the Old Testament book on one side and the New Testament on the other.\nThis represents the time between the Old and New Testaments. A time of approximately 400 years.\n\n13\u000bThirsty Teen\u000bBetween the Testaments",
-      "bibleBooks": []
+      "bibleBooks": [],
+      "importantPeople": [
+        {
+          "name": "Alexander the Great",
+          "role": "Greek conqueror of the Persian empire",
+          "biblical": false
+        },
+        {
+          "name": "Antiochus IV Epiphanes",
+          "role": "Seleucid ruler who desecrated the temple",
+          "biblical": false
+        },
+        {
+          "name": "Judas Maccabeus",
+          "role": "Led the Jewish revolt",
+          "biblical": false
+        }
+      ]
     },
     {
       "number": 14,
@@ -375,6 +881,88 @@
         },
         {
           "book": "John"
+        }
+      ],
+      "importantPeople": [
+        {
+          "name": "Jesus",
+          "role": "The Christ; Son of God"
+        },
+        {
+          "name": "Mary",
+          "role": "Mother of Jesus"
+        },
+        {
+          "name": "Joseph",
+          "role": "Husband of Mary"
+        },
+        {
+          "name": "John the Baptist",
+          "role": "Forerunner of Jesus"
+        },
+        {
+          "name": "Peter",
+          "role": "Apostle"
+        },
+        {
+          "name": "Andrew",
+          "role": "Apostle"
+        },
+        {
+          "name": "James",
+          "role": "Apostle; son of Zebedee"
+        },
+        {
+          "name": "John",
+          "role": "Apostle; son of Zebedee"
+        },
+        {
+          "name": "Philip",
+          "role": "Apostle"
+        },
+        {
+          "name": "Bartholomew",
+          "role": "Apostle"
+        },
+        {
+          "name": "Thomas",
+          "role": "Apostle"
+        },
+        {
+          "name": "Matthew",
+          "role": "Apostle; tax collector"
+        },
+        {
+          "name": "James the son of Alphaeus",
+          "role": "Apostle"
+        },
+        {
+          "name": "Thaddaeus",
+          "role": "Apostle"
+        },
+        {
+          "name": "Simon the Zealot",
+          "role": "Apostle"
+        },
+        {
+          "name": "Judas Iscariot",
+          "role": "Apostle who betrayed Jesus"
+        },
+        {
+          "name": "Mary Magdalene",
+          "role": "Follower of Jesus; witness of the resurrection"
+        },
+        {
+          "name": "Herod the Great",
+          "role": "King of Judea at Jesus' birth"
+        },
+        {
+          "name": "Pontius Pilate",
+          "role": "Roman governor who sentenced Jesus"
+        },
+        {
+          "name": "Caiaphas",
+          "role": "High priest"
         }
       ]
     },
@@ -458,6 +1046,72 @@
         },
         {
           "book": "Revelation"
+        }
+      ],
+      "importantPeople": [
+        {
+          "name": "Peter",
+          "role": "Apostle; preached at Pentecost"
+        },
+        {
+          "name": "John",
+          "role": "Apostle"
+        },
+        {
+          "name": "James",
+          "role": "Apostle; brother of John"
+        },
+        {
+          "name": "Matthias",
+          "role": "Chosen to replace Judas"
+        },
+        {
+          "name": "Stephen",
+          "role": "First Christian martyr"
+        },
+        {
+          "name": "Philip",
+          "role": "Evangelist"
+        },
+        {
+          "name": "Paul",
+          "role": "Apostle to the Gentiles"
+        },
+        {
+          "name": "Barnabas",
+          "role": "Companion of Paul"
+        },
+        {
+          "name": "Silas",
+          "role": "Companion of Paul"
+        },
+        {
+          "name": "Timothy",
+          "role": "Young evangelist; companion of Paul"
+        },
+        {
+          "name": "Titus",
+          "role": "Companion of Paul"
+        },
+        {
+          "name": "Luke",
+          "role": "Physician; wrote Luke and Acts"
+        },
+        {
+          "name": "Priscilla and Aquila",
+          "role": "Christian couple; co-workers of Paul"
+        },
+        {
+          "name": "Apollos",
+          "role": "Eloquent teacher"
+        },
+        {
+          "name": "Cornelius",
+          "role": "First Gentile convert"
+        },
+        {
+          "name": "Lydia",
+          "role": "First convert in Europe"
         }
       ]
     }

@@ -138,7 +138,7 @@ export const library: LibraryTestament[] = [
           b('Colossians', 'The supremacy and sufficiency of Christ.'),
           b('1 Thessalonians', 'Encouragement to a young church, and hope in Christ’s return.'),
           b('2 Thessalonians', 'Steadfastness and clarity about the Day of the Lord.'),
-          b('1 Timothy', 'Guidance on church order and leadership for a young pastor.'),
+          b('1 Timothy', 'Guidance on church order and leadership for a young preacher.'),
           b('2 Timothy', 'Paul’s final charge: guard the gospel and endure.'),
           b('Titus', 'Sound doctrine and good works in the churches of Crete.'),
           b('Philemon', 'A personal plea to receive a runaway slave as a brother.'),

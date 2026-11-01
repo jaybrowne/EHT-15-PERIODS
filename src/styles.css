@@ -291,6 +291,8 @@ button.ghost:hover:not(:disabled) { background: var(--surface); }
   .grid { grid-template-columns: repeat(3, 1fr); grid-template-rows: none; grid-auto-rows: minmax(200px, auto); flex: none; }
   .map { height: auto; }
   .learn, .overview, .quiz { grid-template-columns: 1fr; height: auto; }
+  .quiz { flex: none; min-height: auto; }
+  .practice { height: auto; }
   .learn-art img, .overview-art img, .quiz-art img { max-height: none; }
   .brand { display: none; }
   /* Stacked layouts scroll, so pin Previous/Next to the bottom of the screen */
@@ -307,6 +309,21 @@ button.ghost:hover:not(:disabled) { background: var(--surface); }
   .nav { padding: 6px 10px; gap: 6px; }
   .nav nav a span, .nav button span { display: none; }
   .main { padding: 10px; }
+  /* Practice: fit the whole quiz on one phone screen */
+  .practice .toolbar { gap: 6px 10px; margin-bottom: 8px; }
+  .practice .segmented { width: 100%; }
+  .practice .segmented button { flex: 1; padding: 6px 4px; font-size: 0.85rem; }
+  .practice .toolbar .progress { font-size: 0.8rem; flex: 1; }
+  .practice .toolbar .ghost { padding: 4px 10px; font-size: 0.8rem; }
+  .quiz { gap: 8px; }
+  .quiz-art { justify-self: center; border-width: 4px; border-radius: 16px; }
+  .quiz-art img { width: auto; max-width: 100%; max-height: 30dvh; display: block; }
+  .quiz-side { gap: 8px; }
+  .quiz-side h1 { font-size: 1.1rem; }
+  .options { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .option { padding: 10px 12px; font-size: 1rem; }
+  .feedback { flex-direction: row; align-items: center; justify-content: space-between; gap: 8px; font-size: 0.9rem; }
+  .feedback button { flex-shrink: 0; padding: 8px 14px; }
 }
 @media (max-width: 440px) {
   .grid { grid-template-columns: 1fr; }

@@ -293,6 +293,14 @@ button.ghost:hover:not(:disabled) { background: var(--surface); }
   .learn, .overview, .quiz { grid-template-columns: 1fr; height: auto; }
   .learn-art img, .overview-art img, .quiz-art img { max-height: none; }
   .brand { display: none; }
+  /* Stacked layouts scroll, so pin Previous/Next to the bottom of the screen */
+  .learn, .overview { padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
+  .learn-nav {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; flex-wrap: nowrap;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    background: var(--surface); border-top: 1px solid var(--line); box-shadow: 0 -4px 14px rgb(0 0 0 / 12%);
+  }
+  .learn-nav button { padding: 10px 12px; font-size: 0.95rem; white-space: nowrap; }
 }
 @media (max-width: 720px) {
   .grid { grid-template-columns: repeat(2, 1fr); }
@@ -358,7 +366,3 @@ button.ghost:hover:not(:disabled) { background: var(--surface); }
   .spine { max-width: 48px; }
 }
 
-.modal-backdrop { position: fixed; inset: 0; background: rgb(0 0 0 / 55%); display: grid; place-items: center; z-index: 100; padding: 16px; }
-.modal { background: var(--surface, #fff); color: var(--ink); border-radius: 14px; padding: 22px 26px; max-width: 420px; box-shadow: 0 12px 40px rgb(0 0 0 / 40%); }
-.modal h2 { margin-top: 0; }
-.modal ol { padding-left: 22px; line-height: 1.7; }

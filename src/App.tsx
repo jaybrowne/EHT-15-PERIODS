@@ -3,7 +3,6 @@ import { NavLink, Navigate, Route, Routes } from 'react-router-dom'
 import { appTitle, dataProblems } from './data'
 import { useFullscreen } from './hooks'
 import Glance from './pages/Glance'
-import InstallHelp from './InstallHelp'
 import Learn from './pages/Learn'
 import Library from './pages/Library'
 import MemoryMap from './pages/MemoryMap'
@@ -46,7 +45,6 @@ export default function App() {
             </NavLink>
           ))}
         </nav>
-        <InstallHelp />
         {fs.supported && (
           <button className="ghost" onClick={fs.toggle} aria-pressed={fs.active} title={fs.active ? 'Exit Presentation' : 'Presentation Mode'} aria-label={fs.active ? 'Exit Presentation' : 'Presentation Mode'}>
             {fs.active ? <Minimize size={18} aria-hidden /> : <Maximize size={18} aria-hidden />}

@@ -1,9 +1,11 @@
-import { BookOpen, GraduationCap, Grid3x3, Maximize, Minimize, PencilLine, Route as RouteIcon } from 'lucide-react'
+import { BookOpen, GraduationCap, Grid3x3, Library as LibraryIcon, Maximize, Minimize, PencilLine, Route as RouteIcon } from 'lucide-react'
 import { NavLink, Navigate, Route, Routes } from 'react-router-dom'
 import { appTitle, dataProblems } from './data'
 import { useFullscreen } from './hooks'
 import Glance from './pages/Glance'
+import InstallHelp from './InstallHelp'
 import Learn from './pages/Learn'
+import Library from './pages/Library'
 import MemoryMap from './pages/MemoryMap'
 import Overview from './pages/Overview'
 import Practice from './pages/Practice'
@@ -13,6 +15,7 @@ const links = [
   { to: '/overview', label: 'Bible Overview', icon: BookOpen },
   { to: '/map', label: 'Memory Map', icon: Grid3x3 },
   { to: '/learn', label: 'Learn', icon: GraduationCap },
+  { to: '/library', label: 'Library', icon: LibraryIcon },
   { to: '/practice', label: 'Practice', icon: PencilLine },
 ]
 
@@ -43,10 +46,10 @@ export default function App() {
             </NavLink>
           ))}
         </nav>
+        <InstallHelp />
         {fs.supported && (
-          <button className="ghost" onClick={fs.toggle} aria-pressed={fs.active}>
+          <button className="ghost" onClick={fs.toggle} aria-pressed={fs.active} title={fs.active ? 'Exit Presentation' : 'Presentation Mode'} aria-label={fs.active ? 'Exit Presentation' : 'Presentation Mode'}>
             {fs.active ? <Minimize size={18} aria-hidden /> : <Maximize size={18} aria-hidden />}
-            <span>{fs.active ? 'Exit Presentation' : 'Presentation Mode'}</span>
           </button>
         )}
       </header>
@@ -58,6 +61,7 @@ export default function App() {
           <Route path="/map" element={<MemoryMap />} />
           <Route path="/learn" element={<Navigate to="/learn/1" replace />} />
           <Route path="/learn/:number" element={<Learn />} />
+          <Route path="/library" element={<Library />} />
           <Route path="/practice" element={<Practice />} />
           <Route path="*" element={<Navigate to="/map" replace />} />
         </Routes>

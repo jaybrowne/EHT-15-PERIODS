@@ -1,10 +1,25 @@
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { bibleImages } from '../data'
 import { useShortcuts } from '../hooks'
+import { library } from '../library'
+
+const sectionStat = (key: 'ot' | 'nt') => {
+  const t = library.find((x) => x.key === key)!
+  return t.shelves.map((s) => ({ title: s.title, count: s.books.length }))
+}
 
 // Overview text is separate teaching content, not taken from the source PowerPoint.
-const screens = [
+const screens: {
+  key: string
+  image: string | undefined
+  alt: string
+  title: string
+  lines: string[]
+  sections?: { title: string; count: number }[]
+  cls?: 'ot' | 'nt'
+}[] = [
   {
     key: 'bible',
     image: bibleImages.closed,
@@ -22,10 +37,29 @@ const screens = [
     title: 'Two Testaments',
     lines: [],
   },
+  {
+    key: 'ot-sections',
+    image: bibleImages.open,
+    alt: 'An open Bible in golden light',
+    title: 'The Old Testament',
+    lines: ['The 39 books of the Old Testament fall into five sections.'],
+    sections: sectionStat('ot'),
+    cls: 'ot',
+  },
+  {
+    key: 'nt-sections',
+    image: bibleImages.open,
+    alt: 'An open Bible in golden light',
+    title: 'The New Testament',
+    lines: ['The 27 books of the New Testament fall into five sections.'],
+    sections: sectionStat('nt'),
+    cls: 'nt',
+  },
 ]
 
 export default function Overview() {
   const [i, setI] = useState(0)
+  const navigate = useNavigate()
   const screen = screens[i]
   const prev = () => setI((v) => Math.max(0, v - 1))
   const next = () => setI((v) => Math.min(screens.length - 1, v + 1))
@@ -58,6 +92,16 @@ export default function Overview() {
             </div>
           </div>
         )}
+        {screen.sections && (
+          <div className="books compact">
+            {screen.sections.map((s) => (
+              <div key={s.title} className={`stat ${screen.cls}`}>
+                <b>{s.count}</b>
+                <span>{s.title}</span>
+              </div>
+            ))}
+          </div>
+        )}
         <div className="learn-nav">
           <button onClick={prev} disabled={i === 0}>
             <ArrowLeft size={18} aria-hidden /> Previous
@@ -65,9 +109,15 @@ export default function Overview() {
           <span className="progress">
             {i + 1} / {screens.length}
           </span>
-          <button onClick={next} disabled={i === screens.length - 1}>
-            Next <ArrowRight size={18} aria-hidden />
-          </button>
+          {i === screens.length - 1 ? (
+            <button onClick={() => navigate('/library')}>
+              Go to Library <ArrowRight size={18} aria-hidden />
+            </button>
+          ) : (
+            <button onClick={next}>
+              Next <ArrowRight size={18} aria-hidden />
+            </button>
+          )}
         </div>
       </div>
     </section>

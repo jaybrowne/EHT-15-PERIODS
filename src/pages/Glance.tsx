@@ -1,3 +1,4 @@
+import { useLayoutEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { periods } from '../data'
 
@@ -90,11 +91,28 @@ const ages = [
 const pct = (col: number) => `${(col / 15) * 100}%`
 const span = (from: number, to: number) => ({ left: pct(from), width: pct(to - from) })
 
+const BOARD_MIN = 1500
+const MIN_ZOOM = 0.6 // below this width the board scrolls sideways instead of shrinking
+
 export default function Glance() {
+  const wrapRef = useRef<HTMLDivElement>(null)
+  const [zoom, setZoom] = useState(1)
+
+  // Shrink the board to fit narrow viewports instead of scrolling horizontally.
+  useLayoutEffect(() => {
+    const el = wrapRef.current
+    if (!el) return
+    const update = () => setZoom(Math.max(MIN_ZOOM, Math.min(1, el.clientWidth / BOARD_MIN)))
+    update()
+    const ro = new ResizeObserver(update)
+    ro.observe(el)
+    return () => ro.disconnect()
+  }, [])
+
   return (
     <section className="glance">
-      <div className="glance-scroll">
-        <div className="glance-board">
+      <div className="glance-scroll" ref={wrapRef}>
+        <div className="glance-board" style={{ zoom }}>
           <header className="glance-head">
             <div className="glance-facts">
               <b>The Bible</b>

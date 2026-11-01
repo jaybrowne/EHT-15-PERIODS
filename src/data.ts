@@ -14,6 +14,12 @@ export interface BibleBook {
   scope?: string
 }
 
+export interface Person {
+  name: string
+  role: string
+  biblical?: boolean
+}
+
 export interface Period {
   number: number
   rhyme: string
@@ -24,6 +30,7 @@ export interface Period {
   historicalExplanation: string
   description: string
   bibleBooks: BibleBook[]
+  people: Person[]
 }
 
 interface SourcePeriod {
@@ -34,6 +41,7 @@ interface SourcePeriod {
   memoryScene: string
   historicalExplanation: string
   bibleBooks?: BibleBook[]
+  importantPeople?: Person[]
 }
 
 // Source text ends with a "Number<VT>Rhyme<VT>Name" slide footer; it is display
@@ -76,6 +84,7 @@ export const periods: Period[] = sourcePeriods.map((p) => ({
   historicalExplanation: stripFooter(p.historicalExplanation),
   description: stripFooter(p.description),
   bibleBooks: p.bibleBooks ?? [],
+  people: p.importantPeople ?? [],
 }))
 
 export const sourceAttribution: string = source.sourceAttribution

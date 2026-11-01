@@ -12,6 +12,7 @@ export default function Learn() {
   const [showDesc, setShowDesc] = useLocalStorage('eht15.learnDesc', true)
   const [showExplain, setShowExplain] = useState(false)
   const [showBooks, setShowBooks] = useState(false)
+  const [showPeople, setShowPeople] = useState(false)
 
   const n = period?.number ?? 1
   const go = (to: number) => {
@@ -101,6 +102,23 @@ export default function Learn() {
             ) : (
               <p className="book-none">No books of the Bible were written during this period.</p>
             ))}
+        </div>
+
+        <div className={`expand books-box ${showPeople ? 'open' : ''}`}>
+          <button className="expand-head" onClick={() => setShowPeople(!showPeople)} aria-expanded={showPeople}>
+            <ChevronDown size={18} aria-hidden /> Notable Characters
+          </button>
+          {showPeople && (
+            <ul className="people-list">
+              {period.people.map((p) => (
+                <li key={p.name}>
+                  <strong>{p.name}</strong>
+                  <span>{p.role}</span>
+                  {p.biblical === false && <em>Outside the Bible</em>}
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
 
         <div className="learn-nav">

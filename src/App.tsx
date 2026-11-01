@@ -1,13 +1,15 @@
-import { BookOpen, GraduationCap, Grid3x3, Maximize, Minimize, PencilLine } from 'lucide-react'
+import { BookOpen, GraduationCap, Grid3x3, Maximize, Minimize, PencilLine, Route as RouteIcon } from 'lucide-react'
 import { NavLink, Navigate, Route, Routes } from 'react-router-dom'
 import { appTitle, dataProblems } from './data'
 import { useFullscreen } from './hooks'
+import Glance from './pages/Glance'
 import Learn from './pages/Learn'
 import MemoryMap from './pages/MemoryMap'
 import Overview from './pages/Overview'
 import Practice from './pages/Practice'
 
 const links = [
+  { to: '/glance', label: 'At a Glance', icon: RouteIcon },
   { to: '/overview', label: 'Bible Overview', icon: BookOpen },
   { to: '/map', label: 'Memory Map', icon: Grid3x3 },
   { to: '/learn', label: 'Learn', icon: GraduationCap },
@@ -50,7 +52,8 @@ export default function App() {
       </header>
       <main className="main">
         <Routes>
-          <Route path="/" element={<Navigate to="/map" replace />} />
+          <Route path="/" element={<Navigate to="/glance" replace />} />
+          <Route path="/glance" element={<Glance />} />
           <Route path="/overview" element={<Overview />} />
           <Route path="/map" element={<MemoryMap />} />
           <Route path="/learn" element={<Navigate to="/learn/1" replace />} />

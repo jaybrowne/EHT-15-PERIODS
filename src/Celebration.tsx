@@ -25,7 +25,7 @@ export default function Celebration({ duration = 7000 }: { duration?: number }) 
 
   useEffect(() => {
     const canvas = ref.current
-    if (!canvas || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    if (!canvas) return
     const ctx = canvas.getContext('2d')!
     const mode = pick(modes)
     const dpr = window.devicePixelRatio || 1

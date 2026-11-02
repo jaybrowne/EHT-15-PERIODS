@@ -208,6 +208,7 @@ button.ghost:hover:not(:disabled) { background: var(--surface); }
 .feedback { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
 .quiz-done { margin: auto; text-align: center; display: flex; flex-direction: column; gap: 14px; align-items: center; }
 .quiz-done h1 { font-size: 4rem; }
+.celebration { position: fixed; inset: 0; width: 100vw; height: 100dvh; pointer-events: none; z-index: 50; }
 
 .problems { padding: 40px; }
 

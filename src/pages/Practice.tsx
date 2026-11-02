@@ -1,6 +1,7 @@
 import { RotateCcw } from 'lucide-react'
 import { useState } from 'react'
 import { periods, type Period } from '../data'
+import Celebration from '../Celebration'
 import { useLocalStorage } from '../hooks'
 
 type Kind = 'rhyme' | 'name' | 'number'
@@ -44,6 +45,7 @@ export default function Practice() {
   const [progress, setProgress] = useLocalStorage<Progress>('eht15.practice', {})
 
   const done = idx >= quiz.length
+  const perfect = done && score === quiz.length
   const q = quiz[idx]
   const meta = kinds.find((k) => k.id === kind)!
 
@@ -92,10 +94,11 @@ export default function Practice() {
 
       {done ? (
         <div className="quiz-done">
+          {perfect && <Celebration />}
           <h1>
             {score} / {quiz.length}
           </h1>
-          <p>Round complete.</p>
+          <p>{perfect ? 'Perfect score! Amazing work!' : 'Round complete.'}</p>
           <button onClick={() => restart()}>
             <RotateCcw size={18} aria-hidden /> Practice again
           </button>

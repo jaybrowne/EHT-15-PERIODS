@@ -1,13 +1,11 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { library, periodsForBook, type LibraryBook, type Shelf } from '../library'
+import { leather, library, periodsForBook, type LibraryBook, type Shelf } from '../library'
 
 interface Selected {
   book: LibraryBook
   shelf: Shelf
 }
-
-const leather = ['#9a4a22', '#4a6670', '#a03030', '#6e4a28', '#3f5a50', '#b0732c']
 
 export default function Library() {
   const [sel, setSel] = useState<Selected | null>(null)

@@ -1,12 +1,13 @@
 import { ArrowLeft, ArrowRight, ChevronDown, Eye, EyeOff, Grid3x3 } from 'lucide-react'
 import { useState } from 'react'
-import { Navigate, useNavigate, useParams } from 'react-router-dom'
+import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
 import { getPeriod, periods } from '../data'
 import { useLocalStorage, useShortcuts } from '../hooks'
 
 export default function Learn() {
   const { number } = useParams()
   const navigate = useNavigate()
+  const isIntro = number === undefined
   const period = getPeriod(Number(number))
   const [showName, setShowName] = useLocalStorage('eht15.learnName', true)
   const [showDesc, setShowDesc] = useLocalStorage('eht15.learnDesc', true)
@@ -14,13 +15,15 @@ export default function Learn() {
   const [showBooks, setShowBooks] = useState(false)
   const [showPeople, setShowPeople] = useState(false)
 
-  const n = period?.number ?? 1
+  const n = isIntro ? 0 : (period?.number ?? 1)
   const go = (to: number) => {
-    if (to >= 1 && to <= periods.length) navigate(`/learn/${to}`)
+    if (to === 0) navigate('/learn')
+    else if (to >= 1 && to <= periods.length) navigate(`/learn/${to}`)
   }
 
   // Space reveals the next hidden item (name, then description); if all shown, hides both.
   const cycle = () => {
+    if (isIntro) return
     if (!showName) setShowName(true)
     else if (!showDesc) setShowDesc(true)
     else {
@@ -36,7 +39,45 @@ export default function Learn() {
     Escape: () => navigate('/map'),
   })
 
-  if (!period) return <Navigate to="/learn/1" replace />
+  if (isIntro) {
+    return (
+      <section className="learn">
+        <ul className="intro-periods">
+          {periods.map((p) => (
+            <li key={p.number} className={p.testament}>
+              <Link to={`/learn/${p.number}`} aria-label={`Period ${p.number}: ${p.rhyme}, ${p.name}`}>
+                <img src={p.image} alt="" loading="lazy" />
+                <span className="intro-num">{p.number}</span>
+                <strong>{p.rhyme}</strong>
+                <small>{p.name}</small>
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className="learn-info">
+          <h1>The Bible in 15 Periods</h1>
+          <p>The Bible can be divided into 15 periods of history, from creation to the church age.</p>
+          <p>
+            This lesson gives you a memory technique for learning them. Each period has a simple rhyme word and a
+            picture, so the order is easy to remember. For every period you can also see which books from the Bible
+            cover that period.
+          </p>
+          <p>We have also noted the important men and women from each period.</p>
+          <div className="learn-nav">
+            <button onClick={() => navigate('/overview')}>
+              <ArrowLeft size={18} aria-hidden /> Overview
+            </button>
+            <button onClick={() => go(1)}>
+              Begin <ArrowRight size={18} aria-hidden />
+            </button>
+          </div>
+          <p className="hint">→ begin · Esc back to map</p>
+        </div>
+      </section>
+    )
+  }
+
+  if (!period) return <Navigate to="/learn" replace />
 
   return (
     <section className={`learn ${period.testament}`}>
@@ -100,7 +141,7 @@ export default function Learn() {
                 ))}
               </ul>
             ) : (
-              <p className="book-none">No books of the Bible were written during this period.</p>
+              <p className="book-none">No books of the Bible cover this period.</p>
             ))}
         </div>
 
@@ -122,7 +163,7 @@ export default function Learn() {
         </div>
 
         <div className="learn-nav">
-          <button onClick={() => go(n - 1)} disabled={n === 1}>
+          <button onClick={() => go(n - 1)}>
             <ArrowLeft size={18} aria-hidden /> Previous
           </button>
           <button className="ghost" onClick={() => navigate('/map')}>

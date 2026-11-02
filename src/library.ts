@@ -19,6 +19,8 @@ export interface LibraryTestament {
   shelves: Shelf[]
 }
 
+export const leather = ['#9a4a22', '#4a6670', '#a03030', '#6e4a28', '#3f5a50', '#b0732c']
+
 const b = (name: string, summary: string, note?: string): LibraryBook => ({ name, summary, note })
 
 // Summaries are draft teaching text, pending review.

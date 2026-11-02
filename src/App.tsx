@@ -57,7 +57,7 @@ export default function App() {
           <Route path="/glance" element={<Glance />} />
           <Route path="/overview" element={<Overview />} />
           <Route path="/map" element={<MemoryMap />} />
-          <Route path="/learn" element={<Navigate to="/learn/1" replace />} />
+          <Route path="/learn" element={<Learn />} />
           <Route path="/learn/:number" element={<Learn />} />
           <Route path="/library" element={<Library />} />
           <Route path="/practice" element={<Practice />} />

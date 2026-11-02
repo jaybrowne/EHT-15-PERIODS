@@ -12,10 +12,10 @@ import Practice from './pages/Practice'
 const links = [
   { to: '/glance', label: 'At a Glance', icon: RouteIcon },
   { to: '/overview', label: 'Bible Overview', icon: BookOpen },
-  { to: '/map', label: 'Memory Map', icon: Grid3x3 },
   { to: '/learn', label: 'Learn', icon: GraduationCap },
-  { to: '/library', label: 'Library', icon: LibraryIcon },
   { to: '/practice', label: 'Practice', icon: PencilLine },
+  { to: '/map', label: 'Memory Map', icon: Grid3x3 },
+  { to: '/library', label: 'Library', icon: LibraryIcon },
 ]
 
 export default function App() {

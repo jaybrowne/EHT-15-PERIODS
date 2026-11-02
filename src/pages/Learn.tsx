@@ -18,7 +18,8 @@ export default function Learn() {
   const n = isIntro ? 0 : (period?.number ?? 1)
   const go = (to: number) => {
     if (to === 0) navigate('/learn')
-    else if (to >= 1 && to <= periods.length) navigate(`/learn/${to}`)
+    else if (to > periods.length) navigate('/practice')
+    else if (to >= 1) navigate(`/learn/${to}`)
   }
 
   // Space reveals the next hidden item (name, then description); if all shown, hides both.
@@ -169,7 +170,7 @@ export default function Learn() {
           <button className="ghost" onClick={() => navigate('/map')}>
             <Grid3x3 size={18} aria-hidden /> Memory Map
           </button>
-          <button onClick={() => go(n + 1)} disabled={n === periods.length}>
+          <button onClick={() => go(n + 1)}>
             Next <ArrowRight size={18} aria-hidden />
           </button>
         </div>

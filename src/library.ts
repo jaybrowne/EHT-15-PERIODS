@@ -111,7 +111,7 @@ export const library: LibraryTestament[] = [
     shelves: [
       {
         key: 'gospels',
-        title: 'Gospels',
+        title: 'Gospel Accounts',
         hue: 215,
         books: [
           b('Matthew', 'Jesus is the promised King and Messiah, fulfilling the Old Testament.'),

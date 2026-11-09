@@ -141,13 +141,9 @@ export default function Glance() {
           <ul className="glance-cards">
             {periods.map((p) => (
               <li key={p.number} className={p.testament}>
-                <Link to={`/learn/${p.number}`} aria-label={`Open period ${p.number}, ${p.rhyme}, ${p.name}`}>
-                  <span className="g-art">
-                    <img src={p.image} alt="" loading="lazy" />
-                    <span className="g-badge">{p.number}</span>
-                  </span>
+                <Link to={`/learn/${p.number}`} aria-label={`Open period ${p.number}, ${p.name}`}>
+                  <span className="g-badge">{p.number}</span>
                   <span className="g-label">
-                    <strong>{p.rhyme}</strong>
                     <span>{nameOverrides[p.number] ?? p.name}</span>
                     {details[p.number] && <em>{details[p.number]}</em>}
                   </span>

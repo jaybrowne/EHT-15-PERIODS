@@ -92,17 +92,22 @@ const pct = (col: number) => `${(col / 15) * 100}%`
 const span = (from: number, to: number) => ({ left: pct(from), width: pct(to - from) })
 
 const BOARD_MIN = 1500
-const MIN_ZOOM = 0.6 // below this width the board scrolls sideways instead of shrinking
+const MIN_ZOOM = 0.5 // below this width the board scrolls sideways instead of shrinking
 
 export default function Glance() {
   const wrapRef = useRef<HTMLDivElement>(null)
   const [zoom, setZoom] = useState(1)
+  const [canScroll, setCanScroll] = useState(false)
 
   // Shrink the board to fit narrow viewports instead of scrolling horizontally.
   useLayoutEffect(() => {
     const el = wrapRef.current
     if (!el) return
-    const update = () => setZoom(Math.max(MIN_ZOOM, Math.min(1, el.clientWidth / BOARD_MIN)))
+    const update = () => {
+      const newZoom = Math.max(MIN_ZOOM, Math.min(1, el.clientWidth / BOARD_MIN))
+      setZoom(newZoom)
+      setCanScroll(newZoom === MIN_ZOOM)
+    }
     update()
     const ro = new ResizeObserver(update)
     ro.observe(el)

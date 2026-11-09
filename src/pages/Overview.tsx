@@ -91,32 +91,60 @@ export default function Overview() {
   return (
     <section className={`overview${screen.shelf ? ' shelf-mode' : ''}`}>
       {screen.shelf ? (
-        <div className="bookcase ov-case">
-          <div className="spines">
-            {screen.shelf.books.map((bk, n) => (
-              <button
-                key={bk.name}
-                className={`spine${sel === bk ? ' on' : ''}`}
-                style={
-                  {
-                    '--leather': leather[(n + screen.shelf!.key.length) % leather.length],
-                    '--ht': `${88 + ((n * 7) % 4) * 4}%`,
-                  } as React.CSSProperties
-                }
-                onMouseEnter={() => setSel(bk)}
-                onFocus={() => setSel(bk)}
-                onClick={() => setSel(bk)}
-                aria-label={bk.name}
-              >
-                <span>
-                  {bk.name}
-                  {bk.note && '*'}
-                </span>
-              </button>
-            ))}
+        <>
+          <div className="overview-art shelf-art">
+            <div className="bookcase ov-case">
+              <div className="spines">
+                {screen.shelf.books.map((bk, n) => (
+                  <button
+                    key={bk.name}
+                    className={`spine${sel === bk ? ' on' : ''}`}
+                    style={
+                      {
+                        '--leather': leather[(n + screen.shelf!.key.length) % leather.length],
+                        '--ht': `${88 + ((n * 7) % 4) * 4}%`,
+                      } as React.CSSProperties
+                    }
+                    onMouseEnter={() => setSel(bk)}
+                    onFocus={() => setSel(bk)}
+                    onClick={() => setSel(bk)}
+                    aria-label={bk.name}
+                  >
+                    <span>
+                      {bk.name}
+                      {bk.note && '*'}
+                    </span>
+                  </button>
+                ))}
+              </div>
+              <div className="plank" />
+            </div>
+            <div className="lib-detail ov-detail" aria-live="polite">
+              {sel ? (
+                <>
+                  <h2>{sel.name}</h2>
+                  <p>{sel.summary}</p>
+                  {sel.note && <p className="lib-note">* {sel.note}</p>}
+                  {bookPeriods.length > 0 && (
+                    <p className="lib-periods">
+                      {bookPeriods.length > 1 ? 'Periods: ' : 'Period: '}
+                      {bookPeriods.map((p, n) => (
+                        <span key={p.number}>
+                          {n > 0 && ', '}
+                          <Link to={`/learn/${p.number}`}>
+                            {p.number}. {p.name}
+                          </Link>
+                        </span>
+                      ))}
+                    </p>
+                  )}
+                </>
+              ) : (
+                <p className="lib-hint">Hover over or tap a book to see what it is about.</p>
+              )}
+            </div>
           </div>
-          <div className="plank" />
-        </div>
+        </>
       ) : (
         <div className="overview-art">
           <img src={screen.image} alt={screen.alt} />
@@ -155,34 +183,6 @@ export default function Overview() {
               </div>
             ))}
           </div>
-        )}
-        {screen.shelf && (
-          <>
-            <div className="lib-detail ov-detail" aria-live="polite">
-              {sel ? (
-                <>
-                  <h2>{sel.name}</h2>
-                  <p>{sel.summary}</p>
-                  {sel.note && <p className="lib-note">* {sel.note}</p>}
-                  {bookPeriods.length > 0 && (
-                    <p className="lib-periods">
-                      {bookPeriods.length > 1 ? 'Periods: ' : 'Period: '}
-                      {bookPeriods.map((p, n) => (
-                        <span key={p.number}>
-                          {n > 0 && ', '}
-                          <Link to={`/learn/${p.number}`}>
-                            {p.number}. {p.name}
-                          </Link>
-                        </span>
-                      ))}
-                    </p>
-                  )}
-                </>
-              ) : (
-                <p className="lib-hint">Hover over or tap a book to see what it is about.</p>
-              )}
-            </div>
-          </>
         )}
         <div className="learn-nav">
           <button onClick={prev} disabled={i === 0}>

@@ -183,12 +183,13 @@ button.ghost:hover:not(:disabled) { background: var(--surface); }
 .ov-detail { position: static; min-height: 150px; margin: 0; }
 .ov-case { padding: 14px 12px 8px; }
 .ov-case .spines { height: 210px; }
-/* Shelf screens: the bookcase takes the artwork's column */
+.shelf-art { display: flex; flex-direction: column; }
+/* Shelf screens: description box appears below bookcase */
+.shelf-mode .shelf-art .ov-detail { min-height: 130px; margin-top: 14px; }
 .shelf-mode .ov-case { align-self: center; padding: 18px 14px 10px; }
 .shelf-mode .ov-case .spines { height: clamp(260px, calc(100dvh - 260px), 560px); }
 .shelf-mode .ov-case .spine { max-width: 90px; }
 .shelf-mode .ov-case .spine span { font-size: clamp(1.2rem, 2.2vw, 1.8rem); letter-spacing: .02em; }
-.shelf-mode .ov-detail { min-height: 130px; }
 @media (max-width: 1099px) {
   .shelf-mode .ov-case .spines { height: 260px; }
 }
@@ -214,7 +215,26 @@ button.ghost:hover:not(:disabled) { background: var(--surface); }
 
 /* Bible at a Glance */
 .glance { height: 100%; }
-.glance-scroll { overflow-x: auto; }
+.glance-scroll { 
+  overflow-x: auto; 
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+/* Visual hint for scrollable content on mobile */
+.glance-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+.glance-scroll::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.glance-scroll::-webkit-scrollbar-thumb {
+  background: rgba(180, 140, 100, 0.5);
+  border-radius: 10px;
+}
+.glance-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(180, 140, 100, 0.8);
+}
 .glance {
   --parch: url('./assets/parchment.webp');
   --serif: Georgia, 'Palatino Linotype', 'Book Antiqua', serif;
@@ -224,6 +244,23 @@ button.ghost:hover:not(:disabled) { background: var(--surface); }
   width: 100%; min-width: 1500px; max-width: 2000px; margin: 0 auto; padding: 22px 52px 40px;
   display: flex; flex-direction: column; gap: 14px; position: relative; font-family: var(--serif);
   background: url('./assets/glance-bg.webp') center / cover; border-radius: 24px; box-shadow: var(--shadow-lg);
+}
+/* Mobile scroll hint - add a pseudo-element to show scroll gradient */
+.glance-scroll::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  background: linear-gradient(to left, rgba(251, 245, 234, 0.6), transparent);
+  pointer-events: none;
+  z-index: 10;
+}
+@media (min-width: 800px) {
+  .glance-scroll::after {
+    display: none;
+  }
 }
 .glance-head { display: flex; align-items: stretch; gap: 24px; }
 .glance-facts, .glance-title {

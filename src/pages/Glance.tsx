@@ -97,17 +97,12 @@ const MIN_ZOOM = 0.5 // below this width the board scrolls sideways instead of s
 export default function Glance() {
   const wrapRef = useRef<HTMLDivElement>(null)
   const [zoom, setZoom] = useState(1)
-  const [canScroll, setCanScroll] = useState(false)
 
   // Shrink the board to fit narrow viewports instead of scrolling horizontally.
   useLayoutEffect(() => {
     const el = wrapRef.current
     if (!el) return
-    const update = () => {
-      const newZoom = Math.max(MIN_ZOOM, Math.min(1, el.clientWidth / BOARD_MIN))
-      setZoom(newZoom)
-      setCanScroll(newZoom === MIN_ZOOM)
-    }
+    const update = () => setZoom(Math.max(MIN_ZOOM, Math.min(1, el.clientWidth / BOARD_MIN)))
     update()
     const ro = new ResizeObserver(update)
     ro.observe(el)
